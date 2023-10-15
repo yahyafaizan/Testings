@@ -1,0 +1,20 @@
+f= open("vlan.txt")
+#print(f.read())
+f.seek(0)
+f=f.read()
+f=f.splitlines()
+#print(f)
+#f.pop(0)
+#f.pop(0)
+
+print(f)
+
+
+for i in range(len(f)):
+    d = f[i].split()
+    if type(d[0]) == type (int()):
+       break
+    else:
+        f.pop(0)
+
+print(f)
